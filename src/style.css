@@ -1,0 +1,35 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  font-family: "pretendard";
+}
+#wise_saying {
+  font-family: "Noto Serif KR";
+}
+.welcomeFont {
+  font-family: "Abril Fatface";
+}
+
+/**브라우저 자동완성 색상변경 */
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  box-shadow: 0 0 0 1000px white inset;
+}
+@layer components {
+  .g_input_style {
+    @apply border-b-black border-b-2 w-[98%] h-10 pl-2;
+  }
+  .g_signIn_form_div {
+    @apply text-xl h-15;
+  }
+  .triangle {
+    @apply w-0 h-0 border-b-black border-r-transparent border-l-transparent border-b-[200px] border-l-[103px] border-r-[103px];
+  }
+}
