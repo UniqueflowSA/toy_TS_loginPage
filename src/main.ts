@@ -58,7 +58,7 @@ const signInUser = async () => {
     console.log(signInUserData);
 
     console.log(signInUserData.uid);
-    window.location.href = "/user.html/";
+    location.replace("/user.html");
     return signInUserData;
   } catch (err: any) {
     /** 에러 텍스트 생성 */
