@@ -137,7 +137,7 @@ if (signUpForm) {
     const handleErrText = (area: Element, message: string): void => {
       area.insertAdjacentHTML(
         "beforeend",
-        `<div class="text-red-600 text-[.8rem] font-medium" id="remove_err_text">${message}</div>`
+        `<div class="text-red-600 text-[.8rem] font-medium" id="err_text">${message}</div>`
       );
     };
     /**유효성 검사 */
